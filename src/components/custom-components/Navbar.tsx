@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import Categories from "./Categories";
+import Tags from "./Tags";
 
 export default function Navbar() {
   return (
@@ -12,7 +12,7 @@ export default function Navbar() {
         About
       </Link>
       <div className="nav-link">
-        <Categories />
+        <Tags />
       </div>
     </nav>
   );

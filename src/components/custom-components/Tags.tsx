@@ -7,10 +7,10 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-export default function Categories() {
+export default function Tags() {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>Categories</DropdownMenuTrigger>
+      <DropdownMenuTrigger>Tags</DropdownMenuTrigger>
       <DropdownMenuContent className="mr-2">
         <DropdownMenuItem>Foo</DropdownMenuItem>
         <DropdownMenuItem>Bar</DropdownMenuItem>
