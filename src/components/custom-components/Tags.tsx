@@ -2,10 +2,10 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+
+import { Tag } from "@/lib/types";
 
 export default async function Tags() {
   const tagsEndpoint = process.env.NEXT_PUBLIC_API + "/tags/list";
@@ -16,7 +16,7 @@ export default async function Tags() {
     <DropdownMenu>
       <DropdownMenuTrigger>Tags</DropdownMenuTrigger>
       <DropdownMenuContent className="mr-2">
-        {tagData.map((tag) => (
+        {tagData.map((tag: Tag) => (
           <DropdownMenuItem key={tag.id}>{tag.name}</DropdownMenuItem>
         ))}
       </DropdownMenuContent>
