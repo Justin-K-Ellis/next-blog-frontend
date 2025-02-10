@@ -22,11 +22,11 @@ export default function PostPreview({ post }: { post: Post }) {
     <Card className="p-2 rounded-sm">
       <CardTitle className="my-4 text-center">{post.title}</CardTitle>
       <CardContent className="text-justify">{contentPreview}</CardContent>
-      <CardFooter>
-        {/* <p>{post._count.comments} comments</p> */}
+      <CardFooter className="flex flex-col gap-1">
+        <p>{post._count.comments} comments</p>
         <div className="flex flex-row gap-2">
           <p>Tags:</p>
-          <div className="flex gap-1">
+          <div className="flex gap-1 flex-wrap">
             {tagArray.length > 0 ? tagArray : "none"}
           </div>
         </div>
