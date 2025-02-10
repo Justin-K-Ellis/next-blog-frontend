@@ -5,10 +5,10 @@ import Tags from "./Tags";
 export default function Navbar() {
   return (
     <nav className="flex gap-1 md:gap-2 items-center">
-      <Link href="#" className="nav-link">
+      <Link href="/" className="nav-link">
         Home
       </Link>
-      <Link href="#" className="nav-link">
+      <Link href="/about" className="nav-link">
         About
       </Link>
       <div className="nav-link">
